@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: wiretransfer
+  config:
+    import: "optional:configserver:http://localhost:8070/"
+
+transfer:
+  url: ${BANK_HOST:http://localhost:8093/transactions}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
