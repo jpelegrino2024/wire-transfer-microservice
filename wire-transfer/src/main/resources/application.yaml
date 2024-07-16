@@ -39,3 +39,9 @@ info:
     name: "wiretransfer"
     description: "Wire transfer system"
     version: "1.0.0"
+
+logging:
+  level:
+    com:
+      julioluis:
+        wiretransfer: DEBUG
